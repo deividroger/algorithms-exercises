@@ -20,11 +20,11 @@ func TournamentWinner(competitions [][]string, results []int) string {
 
 func getWinner(winners map[string]int) string {
 	var maxKey string
-	valueValue := 0
+	maxValue := 0
 
 	for key, value := range winners {
-		if value > valueValue {
-			valueValue = value
+		if value > maxValue {
+			maxValue = value
 			maxKey = key
 		}
 	}
